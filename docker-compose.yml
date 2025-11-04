@@ -1,0 +1,11 @@
+services:
+
+  statsfinder:
+    container_name: statsfinder
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8585:8585"
+    restart: unless-stopped
+
